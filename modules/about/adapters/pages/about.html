@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="introduccion">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
-    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../sources/css/navbar.css">
 </head>
-<body>
-    <div class="container">
+<body ng-controller="aboutController">
+    <div ng-include="'../../../../kernel/components/sidebar/navbar.html'" class="sticky-top" >
+    </div>
+    <div class="container" >
         <div class="col d-flex align-middle">
-        <img src="./img/perritos.jpg" alt="perrito" height="500" widht="auto" >
+        <img src="../../../../sources/img/perritos.jpg" alt="perrito" height="500" widht="auto" >
         
 
         </div>
@@ -21,5 +24,7 @@
               en un ambiente de mejora continua, a través de programas educativos pertinentes y de calidad para contribuir a satisfacer las necesidades de la sociedad.</p>
     
        </div>
+       <script src="../../../../kernel/utils/angular.min.js"></script>
+       <script src="../controller.js"></script>
 </body>
 </html>
